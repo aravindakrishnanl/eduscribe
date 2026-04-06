@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YT-Sum AI | History</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        padding: 9px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="layout">
+      <header class="topbar">
+        <div class="brand">YT-Sum AI</div>
+        <nav class="nav">
+          <a href="/">Home</a><a href="/processing">Processing</a><a href="/transcript">Transcript</a>
+          <a href="/summary">Summary</a><a href="/translation">Translation</a><a href="/audio-summary">Audio</a>
+          <a href="/analytics">Analytics</a><a href="/history">History</a><a href="/settings">Settings</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h2>Processing History</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th><th>Title</th><th>Type</th><th>Lang</th><th>Created</th><th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="historyRows"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="/assets/js/app.js"></script>
+    <script>
+      renderHistoryPage();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YT-Sum AI | Summary</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header class="topbar">
+        <div class="brand">YT-Sum AI</div>
+        <nav class="nav">
+          <a href="/">Home</a><a href="/processing">Processing</a><a href="/transcript">Transcript</a>
+          <a href="/summary">Summary</a><a href="/translation">Translation</a><a href="/audio-summary">Audio</a>
+          <a href="/analytics">Analytics</a><a href="/history">History</a><a href="/settings">Settings</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h2>Summarization Output</h2>
+        <p id="summaryMeta" class="status">No summary generated yet.</p>
+        <textarea id="summaryText"></textarea>
+        <button id="downloadSummary" class="secondary">Download Summary</button>
+      </section>
+    </main>
+    <script src="/assets/js/app.js"></script>
+    <script>
+      renderSummaryPage();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YT-Sum AI | Analytics</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header class="topbar">
+        <div class="brand">YT-Sum AI</div>
+        <nav class="nav">
+          <a href="/">Home</a><a href="/processing">Processing</a><a href="/transcript">Transcript</a>
+          <a href="/summary">Summary</a><a href="/translation">Translation</a><a href="/audio-summary">Audio</a>
+          <a href="/analytics">Analytics</a><a href="/history">History</a><a href="/settings">Settings</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h2>Video Analytics</h2>
+        <div class="kpis">
+          <div class="kpi"><span>Duration</span><strong id="durationKpi">-</strong></div>
+          <div class="kpi"><span>Transcript Words</span><strong id="transcriptKpi">-</strong></div>
+          <div class="kpi"><span>Summary Words</span><strong id="summaryKpi">-</strong></div>
+          <div class="kpi"><span>Compression</span><strong id="compressionKpi">-</strong></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Keywords</h2>
+        <div id="keywords" class="chips"></div>
+        <h2>Topics</h2>
+        <div id="topics" class="chips"></div>
+      </section>
+
+      <section class="card">
+        <h2>Important Timestamps</h2>
+        <ol id="timestamps"></ol>
+      </section>
+
+      <section class="card">
+        <h2>Ask Questions About Video</h2>
+        <form id="qaForm">
+          <label for="qaQuestion">Question</label>
+          <input id="qaQuestion" placeholder="What is the key takeaway?" />
+          <button type="submit">Ask</button>
+        </form>
+        <label for="qaAnswer">Answer</label>
+        <textarea id="qaAnswer"></textarea>
+      </section>
+    </main>
+    <script src="/assets/js/app.js"></script>
+    <script>
+      renderAnalyticsPage();
+      byId("qaForm").addEventListener("submit", askQuestion);
+    </script>
+  </body>
+</html>

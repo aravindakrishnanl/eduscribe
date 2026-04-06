@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.local
+.venv/
+venv/
+data/*.mp3
+audio_outputs/*.mp3
+data/ytsum.db

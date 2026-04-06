@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YT-Sum AI | Model Settings</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header class="topbar">
+        <div class="brand">YT-Sum AI</div>
+        <nav class="nav">
+          <a href="/">Home</a><a href="/processing">Processing</a><a href="/transcript">Transcript</a>
+          <a href="/summary">Summary</a><a href="/translation">Translation</a><a href="/audio-summary">Audio</a>
+          <a href="/analytics">Analytics</a><a href="/history">History</a><a href="/settings">Settings</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h2>Model Configuration</h2>
+        <form id="settingsForm">
+          <div class="grid">
+            <div>
+              <label for="asrModel">ASR model</label>
+              <input id="asrModel" />
+            </div>
+            <div>
+              <label for="abstractiveModel">Summarization model</label>
+              <input id="abstractiveModel" />
+            </div>
+            <div>
+              <label for="translationModel">Translation model</label>
+              <input id="translationModel" />
+            </div>
+            <div>
+              <label for="enableTransformers">Enable transformer pipelines</label>
+              <input id="enableTransformers" type="checkbox" />
+            </div>
+          </div>
+          <button type="submit">Save settings</button>
+          <p id="settingsStatus" class="status"></p>
+        </form>
+      </section>
+    </main>
+    <script src="/assets/js/app.js"></script>
+    <script>
+      renderSettingsPage();
+    </script>
+  </body>
+</html>

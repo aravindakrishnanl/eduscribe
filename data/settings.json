@@ -1,0 +1,6 @@
+{
+  "asr_model": "whisper-small",
+  "abstractive_model": "sshleifer/distilbart-cnn-12-6",
+  "translation_model": "Helsinki-NLP/opus-mt-en-fr",
+  "enable_transformers": false
+}
