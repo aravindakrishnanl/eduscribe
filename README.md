@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📝 Eduscribe
+# Eduscribe
 
 **Turn any YouTube lecture into structured notes, summaries, and audio — instantly.**
 
