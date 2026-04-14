@@ -179,7 +179,4 @@ git push origin feature/your-feature-name
 ```
 
 ---
-
-## License
-
-[MIT](LICENSE) — built with ❤️ for students.
+built with ❤️ for students.
