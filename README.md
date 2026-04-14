@@ -179,4 +179,4 @@ git push origin feature/your-feature-name
 ```
 
 ---
-built with ❤️ for students.
+Built with ❤️ for students.
